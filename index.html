@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Cake Recipes</title>
+    <style>
+        * { box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        body { background-color: #fdf2f4; padding: 20px; color: #444; }
+
+        .slideshow-container {
+            max-width: 900px;
+            position: relative;
+            margin: auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .mySlides { display: none; }
+        img { border-bottom: 5px solid #ff6b81; object-fit: cover; height: 400px; }
+
+        .recipe-content { padding: 40px; }
+        .recipe-content h2 { color: #ff6b81; margin-top: 0; font-size: 28px; border-bottom: 2px style dashed #ff6b81; display: inline-block; }
+        
+        ul, ol { margin-top: 10px; line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        strong { color: #333; }
+
+        /* Navigation Arrows */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 200px;
+            width: auto;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            transition: 0.3s;
+            background-color: rgba(0,0,0,0.4);
+            text-decoration: none;
+            border-radius: 50%;
+            margin: 0 15px;
+        }
+        .next { right: 0; }
+        .prev:hover, .next:hover { background-color: #ff6b81; }
+
+        /* Smooth Fading */
+        .fade {
+            animation: fadeEffect 1s;
+        }
+        @keyframes fadeEffect {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="chocolate-cake.jpg" style="width:100%" alt="Chocolate Cake">
+        <div class="recipe-content">
+            <h2>Chocolate Cake</h2>
+            <p><strong>Ingredients:</strong></p>
+            <ul>
+                <li>225g Flour, 350g Sugar, 75g Cocoa Powder</li>
+                <li>1.5 tsp Baking Powder, 1.5 tsp Baking Soda, 1 tsp Salt</li>
+                <li>2 Eggs, 240ml Milk, 120ml Vegetable Oil, 65g Butter, 2 tsp Vanilla</li>
+            </ul>
+            <p><strong>Procedure:</strong></p>
+            <ol>
+                <li>Preheat oven to 180°C. Grease and line two 20cm pans.</li>
+                <li>Whisk dry ingredients. Add eggs, milk, oil, and vanilla; beat for 2 mins.</li>
+                <li>Stir in boiling water. Bake for 30–35 minutes.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="vanilla-cake.jpg" style="width:100%" alt="Vanilla Cake">
+        <div class="recipe-content">
+            <h2>Vanilla Sponge Cake</h2>
+            <p><strong>Ingredients:</strong></p>
+            <ul>
+                <li>4 Large Eggs, 120g Sugar, 120g Sifted Flour</li>
+                <li>1 tsp Vanilla Extract, 1/4 tsp Salt</li>
+            </ul>
+            <p><strong>Procedure:</strong></p>
+            <ol>
+                <li>Preheat to 175°C. Beat eggs and sugar for 8 mins until thick (ribbon stage).</li>
+                <li>Fold in flour gently by hand.</li>
+                <li>Fold in hot milk and melted butter; bake for 25–30 mins.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Carrot cake.jpg" style="width:100%" alt="Carrot Cake">
+        <div class="recipe-content">
+            <h2>Carrot Cake</h2>
+            <p><strong>Ingredients:</strong></p>
+            <ul>
+                <li>2 Cups Oil, 2 Cups Sugar, 1 Cup Brown Sugar, 4 Eggs</li>
+                <li>2 Cups Flour, 2 tsp Baking Soda, 1 tsp Cinnamon, 3 Cups Carrots</li>
+            </ul>
+            <p><strong>Procedure:</strong></p>
+            <ol>
+                <li>Preheat to 175°C. Whisk wet ingredients.</li>
+                <li>Sift in dry ingredients; fold in carrots and walnuts.</li>
+                <li>Bake for 40–45 mins in a 9x13-inch pan.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Cheese cake.jpg" style="width:100%" alt="Cheese Cake">
+        <div class="recipe-content">
+            <h2>Cheese Cake</h2>
+            <p><strong>Ingredients:</strong></p>
+            <ul>
+                <li>200g Biscuits, 100g Butter, 600g Cream Cheese</li>
+                <li>150g Sugar, 3 Eggs, 150ml Sour Cream, 1 tbsp Flour</li>
+            </ul>
+            <p><strong>Procedure:</strong></p>
+            <ol>
+                <li>Preheat to 160°C. Press crust into a 23cm pan.</li>
+                <li>Beat cheese and sugar; add eggs one by one. Mix in sour cream.</li>
+                <li>Bake 50–60 mins. Cool slowly in the oven with the door open.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Red Velvet Cake.jpg" style="width:100%" alt="Red Velvet Cake">
+        <div class="recipe-content">
+            <h2>Red Velvet Cake</h2>
+            <p><strong>Ingredients:</strong></p>
+            <ul>
+                <li>250g Flour, 300g Sugar, 1 tsp Baking Soda, 1 tbsp Cocoa</li>
+                <li>240ml Oil, 240ml Buttermilk, 2 Eggs, 2 tbsp Red Food Coloring</li>
+            </ul>
+            <p><strong>Procedure:</strong></p>
+            <ol>
+                <li>Preheat to 175°C. Whisk dry ingredients.</li>
+                <li>Combine wet ingredients and gradually add to dry.</li>
+                <li>Divide into two 9-inch pans and bake for 30–35 mins.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="LEMON CAKE.jpg" style="width:100%" alt="Lemon Cake">
+        <div class="recipe-content">
+            <h2>Lemon Cake</h2>
+            <p><strong>Ingredients:</strong></p>
+            <ul>
+                <li>250g Flour, 200g Sugar, 1 tsp Baking Powder, 1 tbsp Lemon Zest</li>
+                <li>240ml Milk, 120ml Oil, 2 Eggs, 2 tbsp Lemon Juice</li>
+            </ul>
+            <p><strong>Procedure:</strong></p>
+            <ol>
+                <li>Preheat to 175°C. Whisk dry ingredients and lemon zest.</li>
+                <li>Mix wet ingredients and combine until smooth.</li>
+                <li>Bake in two 9-inch pans for 30–35 mins.</li>
+            </ol>
+        </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<script>
+    let slideIndex = 1;
+    let timer;
+
+    showSlides(slideIndex);
+    autoSlide();
+
+    function plusSlides(n) {
+        clearInterval(timer); // Stop auto-slide when user interacts
+        showSlides(slideIndex += n);
+        autoSlide(); // Restart auto-slide
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+    }
+
+    function autoSlide() {
+        timer = setInterval(() => {
+            plusSlides(1);
+        }, 6000); // Slide changes every 6 seconds
+    }
+</script>
+
+</body>
