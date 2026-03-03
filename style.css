@@ -1,52 +1,74 @@
- 
-        * { box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
-        body { background-color: #fdf2f4; padding: 20px; color: #444; }
 
-        .slideshow-container {
-            max-width: 900px;
-            position: relative;
-            margin: auto;
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-        }
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
 
-        .mySlides { display: none; }
-        img { border-bottom: 5px solid #ff6b81; object-fit: cover; height: 400px; }
+body { 
+    background-color: 0d1117; 
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    color:ffffff;
+}
 
-        .recipe-content { padding: 40px; }
-        .recipe-content h2 { color: #ff6b81; margin-top: 0; font-size: 28px; border-bottom: 2px style dashed #ff6b81; display: inline-block; }
-        
-        ul, ol { margin-top: 10px; line-height: 1.8; }
-        li { margin-bottom: 8px; }
-        strong { color: #333; }
+.slideshow-container {
+    width: 100%;
+    max-width: 450px;
+    background:161b22;
+    border-radius: 25px;
+    overflow: hidden; 
+    box-shadow: 0 15px 40pxrgba(0,0,0,0.6);
+}
 
-        /* Navigation Arrows */
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 200px;
-            width: auto;
-            padding: 20px;
-            color: white;
-            font-weight: bold;
-            font-size: 30px;
-            transition: 0.3s;
-            background-color: rgba(0,0,0,0.4);
-            text-decoration: none;
-            border-radius: 50%;
-            margin: 0 15px;
-        }
-        .next { right: 0; }
-        .prev:hover, .next:hover { background-color:black; }
+.recipe-header {
+    padding: 25px 20px;
+    text-align: center;
+}
 
-        /* Smooth Fading */
-        .fade {
-            animation: fadeEffect 1s;
-        }
-        @keyframes fadeEffect {
-            from { opacity: 0.4; }
-            to { opacity: 1; }
-        }
-    
+.recipe-title {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.image-container {
+    width: 100%;
+    height: 350px; 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.recipe-content {
+    padding: 30px 25px;
+}
+
+.recipe-section {
+    margin-bottom: 30px;
+}
+
+.recipe-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color:ffffff;
+    border-bottom: 2px solid:#303630;
+    padding-bottom: 5px;
+}
+
+.recipe-content ul, .recipe-content ol {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color:cbd5e0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}

@@ -5,9 +5,9 @@ let slideIndex = 1;
     autoSlide();
 
     function plusSlides(n) {
-        clearInterval(timer); // Stop auto-slide when user interacts
+        clearInterval(timer); 
         showSlides(slideIndex += n);
-        autoSlide(); // Restart auto-slide
+        autoSlide();
     }
 
     function showSlides(n) {
@@ -24,5 +24,5 @@ let slideIndex = 1;
     function autoSlide() {
         timer = setInterval(() => {
             plusSlides(1);
-        }, 6000); // Slide changes every 6 seconds
+        }, 6000);
     }
